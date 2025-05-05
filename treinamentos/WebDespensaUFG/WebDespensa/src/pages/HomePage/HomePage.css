@@ -1,0 +1,41 @@
+.HomeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    color: #1776e4;
+    
+}
+
+h1 {
+    color: #3f51b5;
+    line-height: 5px;
+}
+
+h2 {
+    font-weight: 500;
+    line-height: 5px;
+}
+
+img {
+    width: 600px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.botao-home-login {
+    width: 300px;
+}
+
+.texto-cadastro {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.link-cadastro {
+    color: #3f51b5;
+    font-weight: bold;
+}

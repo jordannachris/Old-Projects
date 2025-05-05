@@ -1,0 +1,12 @@
+<mat-card class="wrapper">
+  <h1>Imóveis Disponíveis!</h1>
+  <img *ngIf="exibirImagem" [src]="imagemAtual" />
+  <div class="btn-wrapper">
+    <button mat-mini-fab color="accent" (click)="anterior()">
+      <mat-icon>keyboard_arrow_left</mat-icon>
+    </button>
+    <button mat-mini-fab color="accent" (click)="proximo()">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+  </div>
+</mat-card>

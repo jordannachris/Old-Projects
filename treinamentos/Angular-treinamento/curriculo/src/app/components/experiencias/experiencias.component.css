@@ -1,0 +1,35 @@
+.experiencias {
+  border-bottom: dotted;
+  border-color: rgb(6, 6, 93);
+}
+
+.experiencias h3 {
+  text-transform: uppercase;
+}
+
+.experiencias ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 2pt;
+}
+
+.experiencias li {
+  padding-bottom: 5px;
+}
+
+.experiencias li h4{
+  font-size: large;
+  font-style: italic;
+  color: rgb(6, 6, 93);
+}
+
+.experiencias li h5{
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(73, 71, 71);
+}
+
+.experiencias li p {
+  font-size: 16px;
+  color: rgb(73, 71, 71);
+}

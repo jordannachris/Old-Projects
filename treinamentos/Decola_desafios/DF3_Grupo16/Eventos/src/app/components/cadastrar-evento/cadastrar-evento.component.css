@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.salvar{
+  width: 10vw;
+}
+.salvar:hover{
+  box-shadow: 3px 3px 0 0 rgb(134, 139, 143);
+}

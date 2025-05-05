@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  width: 90%;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+
+.container app-cabecalho {
+  flex: 1;
+}
+
+.container .info {
+  flex: 9;
+  display: flex;
+  flex-direction: row;
+  /* border: 5px solid orange; */
+}
+
+.lado-esquerdo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.lado-direito {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  padding-left: 20px;
+  text-align: left;
+}
+
+
+

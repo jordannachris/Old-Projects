@@ -1,0 +1,19 @@
+.avaliate-container {
+  width: 40%;
+  margin: 20px auto 0 auto;
+}
+
+.avaliate-form {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: space-around;
+}
+
+.texto1 {
+  color: #051c6b;
+}
+
+#area3 {
+  height: 100px;
+}

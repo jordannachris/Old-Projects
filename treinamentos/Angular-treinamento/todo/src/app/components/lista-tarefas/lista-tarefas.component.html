@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <h1>Lista de Atividades!</h1>
+
+  <p>Tarefas pendentes: {{svc.quantidadePendentes()}} </p>
+
+  <button class="deletaTudo" (click)="svc.deletaTudo()">
+    <i class="fas fa-trash"></i>
+    Deletar todas as tarefas
+  </button>
+
+  <div class="action-box">
+    <input
+      type="text"
+      placeholder="Adicionar nova tarefa"
+      (keyup.enter)="adicionar()"
+      [(ngModel)]="descricaoNovaTarefa"
+    />
+
+    <button type="button" (click)="adicionar()">
+      <i class="fas fa-plus"></i>
+    </button>
+
+  </div>
+
+  <div class="list">
+    <app-tarefa
+      *ngFor="let item of svc.lista"
+      [tarefa]="item"
+      (mudarStatus)="svc.atualizar($event)"
+    ></app-tarefa>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+.habilidades h3 {
+  text-transform: uppercase;
+}
+
+.habilidades-section {
+  display: flex;
+  flex-direction: row;
+  line-height: 5px;
+}
+
+.hard-skills {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.soft-skills {
+  flex: 1;
+  margin-left: 5px;
+}
+
+.habilidades-section h4{
+  font-size: large;
+  color: rgb(6, 6, 93);
+}
+
+.progress-bar {
+  /* background: rgb(0, 0, 0); */
+  height: 15px;
+  width: 300px;
+  border: 2px solid rgb(6, 6, 93);
+  border-radius: 10px;
+}
+
+.progress-bar:after {
+  background: rgb(6, 6, 93);
+  background-image: linear-gradient(to right, rgb(6, 6, 93),rgb(110, 194, 209));
+  content: '';
+  display: block;
+  /* width: 90%; */
+  height: 100%;
+  border-radius: 9px 0px 0px 9px;
+}
+
+#javascript:after {
+  width: 60%;
+}
+
+#html:after {
+  width: 85%;
+}
+
+#css:after {
+  width: 75%;
+}
+
+#organizacao:after {
+  width: 87%;
+}
+
+#criatividade:after {
+  width: 50%;
+}
+
+#trabalhoemequipe:after {
+  width: 91%;
+}

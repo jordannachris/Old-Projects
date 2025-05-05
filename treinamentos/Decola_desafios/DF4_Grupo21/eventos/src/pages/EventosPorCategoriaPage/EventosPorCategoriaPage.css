@@ -1,0 +1,30 @@
+.container-categoria {
+    width: 60%;
+    margin: 20px auto 0 auto;
+    display: column;
+}
+
+.container-categoria h2, p {
+    text-align: center;
+    color: #051C6B;
+}
+
+.selecionar-categoria {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+}
+
+#select-categoria {
+    flex: 3;
+}
+
+#botao-categoria {
+    flex: 1;
+}
+
+.listaEventosPorCategoria {
+    width: 60%;
+    margin: 20px auto 0 auto;
+}

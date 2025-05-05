@@ -1,0 +1,111 @@
+<div class="wrapper">
+  <div class="title">
+    <h1>{{titulo}}</h1>
+  </div>
+</div>
+<div class="container">
+  <!--Listar Evento por ID-->
+  <div class="box-lista" id="box1">
+    <div class="listEvent">
+      <p class="titulo">{{listarEvento}}</p>
+      <div class="alinha">
+        <input [(ngModel)]="IdEventoInput" type="text">
+        <button (click)="get(IdEventoInput, 'box1')">Listar</button>
+      </div>
+    </div>
+    <mat-card *ngIf="Model?.idEventoStatus">
+      <div class="listagem">
+        <p>ID Evento: {{Model?.idEvento}}</p>
+        <p class="price">Status: {{Model?.idEventoStatus}}</p>
+        <p class="price">Categoria: {{Model?.idCategoriaEvento}}</p>
+        <p class="price">Nome: {{Model?.nome}}</p>
+        <p class="price">Data Inicio: {{Model?.dataHoraInicio}}</p>
+        <p class="price">Data Fim: {{Model?.dataHoraFim}}</p>
+        <p class="price">Local: {{Model?.local}}</p>
+        <p class="price">Descrição: {{Model?.descricao}}</p>
+        <p class="price">Vagas: {{Model?.limiteVagas}}</p>
+      </div>
+    </mat-card>
+  </div>
+
+  <!--Listar Participantes por ID do Evento-->
+  <div class="box-lista" id="box2">
+    <div class="listPart">
+      <p class="titulo">{{listarParticipante}}</p>
+      <div class="alinha">
+        <input [(ngModel)]="IdEventoList" type="text">
+        <button (click)="clickMostrarLista()">Listar</button>
+      </div>
+    </div>
+    <!--Lista da busca pelo ID-->
+    <mat-card *ngIf="mostrarLista">
+      <table style="width: 100%">
+        <div class="listagem" *ngFor="let item of listaParticipantes">
+          <p class="price">Id Participação: {{item?.idParticipacao}}</p>
+          <p>ID Evento: {{item?.idEvento}}</p>
+          <p class="price">Login Participante: {{item?.loginParticipante}}</p>
+          <p class="price">Flag Participante: {{item?.flagPresente}}</p>
+          <p class="price">Nota: {{item?.nota}}</p>
+          <p class="price">Comentário: {{item?.comentario}}</p>
+          <div class="espaco"></div>
+        </div>
+      </table>
+    </mat-card>
+  </div>
+
+  <!--Atualizar Status-->
+  <div class="box-direita">
+    <div class="box-atualizar">
+      <div class="updateStatus">
+        <p class="titulo">{{atualizaStatus}}</p>
+        <div class="alinha">
+          <input [(ngModel)]="IdEventoUpdate" type="text">
+          <button (click)="get(IdEventoUpdate, 'box2')">Listar</button>
+        </div>
+        <!--Lista da busca pelo ID-->
+        <mat-card *ngIf="ModelStatus?.idEventoStatus">
+          <div class="listagem">
+            <p>ID Evento: {{ModelStatus?.idEvento}}</p>
+          </div>
+        </mat-card>
+        <!--Opções de Status-->
+        <form>
+          <mat-form-field appearance="fill">
+            <mat-label>Status</mat-label>
+            <mat-select [(ngModel)]="selectedValue" name="Status">
+              <mat-option *ngFor="let status of status" [value]="status.value">
+                {{status.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </form>
+      </div>
+    </div>
+
+    <div class="box-flag">
+      <!--Atualizar Flag de Presença-->
+      <div class="flagPresent">
+        <p class="titulo">{{flagPresente}}</p>
+      </div>
+      <div class="alinha">
+        <input [(ngModel)]="IdEventoFlag" type="text">
+        <button (click)="get(IdEventoFlag, 'box3')">Listar</button>
+      </div>
+      <!--Lista da busca pelo ID-->
+      <mat-card *ngIf="ModelFlag?.idEventoStatus">
+        <div class="listagem">
+          <p>ID Evento: {{ModelFlag?.idEvento}}</p>
+        </div>
+      </mat-card>
+      <!--Checkbox de presença-->
+      <section class="example-section">
+        <label class="example-margin">Presente:</label>
+        <mat-radio-group [(ngModel)]="labelPosition">
+          <mat-radio-button class="example-margin" value="after">Sim</mat-radio-button>
+          <mat-radio-button class="example-margin" value="before">Não</mat-radio-button>
+        </mat-radio-group>
+      </section>
+    </div>
+  </div>
+
+</div>

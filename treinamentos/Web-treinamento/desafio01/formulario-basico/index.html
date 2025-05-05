@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Básico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="principal">
+        <div class="dados-pessoais">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <div>
+                    <form>
+                        <label for="nome">Nome: </label>
+                        <input name="nome" id="nome" type="text" required>
+                    </form>
+                </div>
+
+                <div>
+                    <form>
+                        <label for="endereco">Endereço: </label>
+                        <input name="endereco" id="endereco" type="text" required>
+                    </form>
+                </div>
+
+                <div>
+                    <form>
+                        <label for="cidade">Cidade: </label>
+                        <input name="cidade" id="cidade" type="text" required>
+                    </form>
+                </div>
+
+                <div>
+                    <form>
+                        <label for="estado">Estado: </label>
+                        <select name="estado" id="estado">
+                            <option value="SP">São Paulo</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </form>
+                </div>
+            </fieldset>
+        </div>
+        <p></p>
+        <div>
+            <fieldset>
+                <legend>Dados profissionais</legend>
+                <div>
+                    <form>
+                        <span>Natureza do Cargo</span><br>
+                        <input name="cargo" value="op1" id="gerencia" type="radio" required>
+                        <label for="gerencia">Gerência</label>
+
+
+                        <input name="cargo" value="op2" id="financeiro" type="radio" required>
+                        <label for="financeiro">Financeiro</label>
+
+
+                        <input name="cargo" value="op3" id="recepcao" type="radio" required>
+                        <label for="recepcao">Recepção</label>
+
+
+                        <input name="cargo" value="op4" id="administracao" type="radio" required>
+                        <label for="administracao">Administrativo</label>
+
+
+                        <input name="cargo" value="op5" id="juridico" type="radio" required>
+                        <label for="juridico">Jurídico</label>
+
+                    </form>
+                </div>
+
+                <div>
+                    <form>
+                        <span><br>Área de interesse</span><br>
+                        <input name="area" value="op1" id="gerencia" type="checkbox" required>
+                        <label for="gerencia">Computação</label>
+
+
+                        <input name="area" value="op2" id="financeiro" type="checkbox" required>
+                        <label for="financeiro">Biologia</label>
+
+
+                        <input name="area" value="op3" id="recepcao" type="checkbox" required>
+                        <label for="recepcao">Meio Ambiente</label>
+
+
+                        <input name="area" value="op4" id="administracao" type="checkbox" required>
+                        <label for="administracao">Engenharia</label>
+
+
+                        <input name="area" value="op5" id="juridico" type="checkbox" required>
+                        <label for="juridico">História</label>
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <span><br>Mini-curriculo:</span>
+                        <textarea name="curriculo" id="curriculo" rows="4" cols="51"></textarea>
+                    </form>
+                </div>
+        </div>
+        <p></p>
+        <div><span>
+                <input name="enviar" type="submit">&nbsp;&nbsp;
+                <input name="limpar" type="button" value="Limpar"> </span>
+        </div>
+    </div>
+</body>
+
+</html>

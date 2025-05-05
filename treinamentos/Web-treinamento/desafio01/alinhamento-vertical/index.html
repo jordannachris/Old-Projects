@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        justify-content: left;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .principal {
+        position: absolute;
+        margin-top: 25px;
+        margin-left: 80px;
+        margin-right: 80px;
+        height: 92%;
+        width: 32%;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .espaco-horizontal-acima {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+    }
+
+    .espaco-horizontal-meio {
+        width: 100%;
+        /*border: 1px solid black;*/
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+    }
+
+    .espaco-horizontal-abaixo {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+    }
+
+    .coluna-esquerda {
+        /*border: 1px solid blue;*/
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .coluna-centro {
+        /*border: 1px solid yellow;*/
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .coluna-direita {
+        /*border: 1px solid orange;*/
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .texto-acima {
+        width: 100%;
+        /*border: 1px solid black;*/
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .texto-meio {
+        width: 100%;
+        /*border: 1px solid black;*/
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .texto-abaixo {
+        width: 100%;
+        /*border: 1px solid black;*/
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+
+</style>
+
+<body>
+    <div class="principal">
+        <div class="espaco-horizontal-acima"></div>
+        <div class="espaco-horizontal-meio">
+            <div class="coluna-esquerda">
+                <div class="texto-acima"></div>
+                <div class="texto-meio">
+                    <br><br>
+                    <span>Hey look! I'm vertically centered!</span>
+                </div>
+                <div class="texto-abaixo"></div>
+            </div>
+
+            <div class="coluna-centro">
+                <div class="texto-acima"></div>
+                <div class="texto-meio">
+                    <span>Hey look! I'm vertically centered!</span>
+                    <br>
+                    <span>Hey look! I'm vertically centered! Tooooooooo!</span>    
+                </div>
+                <div class="texto-abaixo"></div>
+            </div>
+
+            <div class="coluna-direita">
+                <div class="texto-acima"></div>
+                <div class="texto-meio">
+                    <span>Hey look! I'm vertically centered!</span>
+                    <br>
+                    <span>Hey look! I'm vertically centered! Tooooooooo!</span>
+                    <br>
+                    <span>Hey look! I'm vertically centered! Tooooooooo!</span>
+                </div>
+                <div class="texto-abaixo"></div>
+            </div>
+        </div>
+        <div class="espaco-horizontal-abaixo"></div>
+    </div>
+</body>
+
+</html>

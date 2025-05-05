@@ -1,0 +1,24 @@
+.cadastrar-container {
+    width: 40%;
+    margin: 20px auto 0 auto;
+}
+
+.cadastrar-container h2 {
+    color: var(--azul);
+}
+
+.cadastrar-form {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: space-around;
+}
+
+.campos-cadastro {
+    /* margin-bottom: 50px; */
+}
+
+.cadastrar-datas {
+    display: flex;
+    justify-content: space-between;
+}

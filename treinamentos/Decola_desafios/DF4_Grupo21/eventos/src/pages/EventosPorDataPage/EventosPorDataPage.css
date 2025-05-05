@@ -1,0 +1,26 @@
+.container-data {
+    width: 60%;
+    margin: 20px auto 0 auto;
+    display: column;
+}
+
+.container-data h2, p {
+    text-align: center;
+    color: #051C6B;
+}
+
+.selecionar-data {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    /* border: 2px solid red;  */
+}
+
+#botao-data {
+    margin: 15px;
+}
+
+.listaEventosPorData {
+    width: 60%;
+    margin: 20px auto 0 auto;
+}

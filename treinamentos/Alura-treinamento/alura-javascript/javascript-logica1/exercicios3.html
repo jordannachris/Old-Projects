@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+<script>
+
+    var loginCadastrado = "jordanna";
+    var senhaCadastrada = "123";
+
+
+    var tentativa = 1;
+
+
+    while (tentativa <= 3) {
+        var loginInformado = prompt("Informe seu login");
+        var senhaInformada = prompt("Informe sua senha");
+        if (loginCadastrado != loginInformado || senhaCadastrada != senhaInformada) {
+            if (loginCadastrado != loginInformado && senhaCadastrada === senhaInformada) {
+                if(tentativa < 3) { alert("Login inválido. Tente novamente"); }
+                else { alert("Login inválido. Infelizmente você atingiu o número máximo de tentativas."); }
+            }
+            else if (loginCadastrado === loginInformado && senhaCadastrada != senhaInformada) {
+                if(tentativa < 3) { alert("Senha inválida. Tente novamente"); }
+                else { alert("Senha inválida. Infelizmente você atingiu o número máximo de tentativas."); }
+            }
+            else if (loginCadastrado != loginInformado && senhaCadastrada != senhaInformada) {
+                if(tentativa < 3) { alert("Login e Senha inválidos. Tente novamente"); }
+                else { alert("Login e Senha inválidos. Infelizmente você atingiu o número máximo de tentativas."); }
+            }
+        }
+
+        tentativa = tentativa + 1;
+        console.log(tentativa);
+
+
+        if (loginCadastrado === loginInformado && senhaCadastrada === senhaInformada) {
+            alert("Bem-vindo ao sistema, " + loginInformado);
+            break;
+        }
+    }
+
+</script>

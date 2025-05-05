@@ -1,0 +1,150 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    height: 100vh;
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.principal {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 46%;
+    width: 35%;
+    /*border: 5px solid orange;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-da-pagina {
+    margin-left: 8px;
+    /*border: 5px solid gray;*/
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.linha-cinza-topo {
+    height: 1px;
+    width: 100%;
+    background-color: #dcdcdc;
+}
+
+.linha-vermelha {
+    height: 6px;
+    width: 97px;
+    background-color: #d00018;
+}
+
+.noticias {
+    margin: 0px;
+    /*border: 5px solid purple;*/
+    height: 50px;
+    display: flex;
+    flex: 50;
+    flex-direction: row;
+}
+
+.noticias-esquerda {
+    /*border: 5px solid green;
+    padding-right: 5px;*/
+    margin-right: 3px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.container-imagem {
+    position: relative;
+}
+
+.texto-imagem {
+    position: absolute;
+    bottom: 4px;
+    left: 0px;
+    font-size:small;
+    color: white;
+    background-color: #d00018;
+    padding: 8px;
+}
+
+.linha-cinza-vertical {
+    height: 100%;
+    width: 1px;
+    background-color: #dcdcdc;
+}
+
+.noticias-direita {
+    /*border: 5px solid greenyellow;*/
+    padding-left: 20px;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.noticia-destaque-dir {
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.linha-cinza-horizontal {
+    height: 1px;
+    width: 100%;
+    background-color: #dcdcdc;
+}
+
+.noticia1-dir {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+}
+
+.noticia1-dir-imagem {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.noticia1-dir-texto {
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+}
+
+.noticia2-dir {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+}
+
+.noticia2-dir-imagem {
+    display: flex;
+    flex: 2;
+}
+
+.noticia2-dir-texto {
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+}
+
+h6 {
+    color: #d00018;
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+    font-size: medium;
+}
+
+h3 {
+    margin: 0;
+    font-size: larger;
+}

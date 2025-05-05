@@ -1,0 +1,63 @@
+.container {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  color: #ff4081;
+  /* border: 5px solid red; */
+}
+
+.container-jogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-jogo h2 {
+  font-size: 22px;
+}
+
+.vez-jogador{
+  color: #7a7a7a;
+}
+
+.resultado-vencedor{
+  color: #8340ff;
+  font-weight: bold;
+}
+
+.resultado-velha{
+  color: red;
+  font-weight: bold;
+}
+
+.container-jogo-tabuleiro{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 0px;
+  margin-bottom: 30px;
+}
+
+app-quadrado {
+  /* border: 1px solid #8340ff; */
+  height: 200px;
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.btn-iniciar-jogo{
+  margin-right: 50px;
+}
+
+.btn-reiniciar-jogo{
+  margin-left: 50px;
+}

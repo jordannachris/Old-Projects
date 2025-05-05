@@ -1,0 +1,19 @@
+<article>
+  <h2>{{post?.titulo}}</h2>
+
+  <div>
+    <input type="checkbox" [(ngModel)]="post.exibirImagem" /> Exibir imagem?
+  </div>
+
+  <img   *ngIf="post.exibirImagem"
+    [src]="post?.imagem"
+  />
+
+  <p>
+    {{post?.texto}}
+  </p>
+
+  <button class="share" (click)="compartilhar()">Compartilhar!</button>
+
+  <div>Número de vezes que este post foi compartilhado: {{contadorCompartilhar}}</div>
+</article>

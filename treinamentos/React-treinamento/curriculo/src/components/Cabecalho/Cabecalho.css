@@ -1,0 +1,48 @@
+div.cabecalho {
+    display: flex;
+    flex-direction: row;
+    /*border: 5px solid orange;*/
+    text-transform: uppercase;
+}
+  
+div.area-foto {
+    padding-right: 20px;
+    display: flex;
+    flex: 1;
+    background-image: url("ti.jpg"); 
+    clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+  }
+  
+img.foto-perfil {
+    margin: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+}
+  
+div.area-nome {
+    padding-left: 20px;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    /*border: 5px solid blue;*/
+    border-bottom: 5px solid rgb(6, 6, 93);
+    border-bottom-style: double;
+    float: left;
+    text-align: left;
+}
+  
+div.area-nome h1 {
+    padding-top: 20px;
+    flex: 1;
+    color: rgb(6, 6, 93);
+}
+  
+div.area-nome h2 {
+    padding-bottom: 20px;
+    flex: 1;
+    color: rgb(73, 71, 71);
+}
+  
+  

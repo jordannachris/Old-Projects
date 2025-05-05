@@ -1,0 +1,43 @@
+<mat-tab-group>
+<mat-tab label="Registrar Participação">
+  <mat-card>
+    <div class="wrapper">
+      <mat-form-field appearance="outline">
+        <mat-label>Id do Evento</mat-label>
+        <input matInput type="text" [(ngModel)]="model.idEvento">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Seu login</mat-label>
+        <input matInput type="text" [(ngModel)]="model.LoginParticipante">
+      </mat-form-field>
+      <button mat-raised-button color="primary" class="salvar" (click)="salvar()" [disabled]="salvando">{{salvando ? "Registrando..." :
+        "Registrar"}}</button>
+    </div>
+  </mat-card>
+</mat-tab>
+  <mat-tab label="Avaliar Evento">
+    <mat-card>
+      <div class="wrapper">
+        <mat-form-field appearance="outline">
+          <mat-label>Id do Evento</mat-label>
+          <input matInput type="text" [(ngModel)]="model.idEvento">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Id do Partipante</mat-label>
+          <input matInput type="text" [(ngModel)]="avaliarModel.IdParticipacao">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Nota do evento (0 a 5)</mat-label>
+          <input matInput type="text" [(ngModel)]="avaliarModel.Nota">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Comentario</mat-label>
+          <input matInput type="text" [(ngModel)]="avaliarModel.Comentario">
+        </mat-form-field>
+        <button mat-raised-button color="primary" class="salvar" (click)="salvarUpdate()" [disabled]="salvando">{{salvando ? "Avaliando..." :
+          "Avaliar"}}</button>
+      </div>
+    </mat-card>
+  </mat-tab>
+</mat-tab-group>
+

@@ -1,0 +1,32 @@
+<mat-card>
+  <div class="wrapper">
+    <mat-form-field appearance="outline">
+      <mat-label>Id da Categoria do Evento</mat-label>
+      <input matInput type="text" [(ngModel)]="model.IdCategoriaEvento">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Nome Evento</mat-label>
+      <input matInput type="text" [(ngModel)]="model.Nome">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Data do Evento</mat-label>
+      <input [(ngModel)]="model.DataHoraInicio" [(ngModel)]="model.DataHoraFim" matInput [matDatepicker]="picker">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Local</mat-label>
+      <input matInput type="text" [(ngModel)]="model.Local">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Descrição</mat-label>
+      <input matInput type="text" [(ngModel)]="model.Descricao">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Quantidade de Vagas</mat-label>
+      <input matInput type="text" [(ngModel)]="model.LimiteDeVagas">
+    </mat-form-field>
+  </div>
+  <button mat-raised-button color="primary" class="salvar" (click)="salvar()" [disabled]="salvando">{{salvando ? "Criando..." :
+    "Criar"}}</button>
+</mat-card>

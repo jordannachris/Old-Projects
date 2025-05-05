@@ -1,0 +1,23 @@
+div.contato {
+    border-bottom: dotted;
+    border-color: rgb(6, 6, 93);
+    min-height: 150px;
+    max-height: 170px;
+    /* line-height: 25px; */
+  }
+  
+div.contato h3 {
+    text-transform: uppercase;
+  }
+  
+ul.informacoes-contato {
+    list-style-type: none;
+    color: rgb(73, 71, 71);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+ul.informacoes-contato li {
+    display: flex;
+}

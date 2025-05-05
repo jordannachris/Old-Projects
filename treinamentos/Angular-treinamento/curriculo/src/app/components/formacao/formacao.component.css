@@ -1,0 +1,26 @@
+.formacao {
+  border-bottom: dotted;
+  border-color: rgb(6, 6, 93);
+}
+
+.formacao h3 {
+  text-transform: uppercase;
+}
+
+.formacao ul {
+  list-style-type: none;
+}
+
+.formacao li {
+  padding-bottom: 5px;
+}
+
+.formacao li h4{
+  font-size: large;
+  font-style: italic;
+  color: rgb(6, 6, 93);
+}
+
+.formacao li p {
+  color: rgb(73, 71, 71);
+}

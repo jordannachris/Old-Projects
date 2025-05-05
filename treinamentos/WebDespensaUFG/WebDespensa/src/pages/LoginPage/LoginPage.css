@@ -1,0 +1,63 @@
+.LoginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    color: #1776e4;
+}
+
+.LoginContainer > .LoginCard {
+    margin-top: 60px;
+    width: 30vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.LoginContainer > .LoginCard > h1 {
+    color: #3f51b5;
+    line-height: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.LoginContainer > .LoginCard > .LoginCardContent {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0;
+    align-content: space-between;
+}
+
+.LoginContainer > .LoginCard > .LoginCardContent > .email {
+    width: 100%;
+}
+
+.LoginContainer > .LoginCard > .LoginCardContent > .espaco {
+    margin: 10px;
+}
+
+.LoginContainer > .LoginCard > .LoginCardContent > .senha {
+    width: 100%;
+}
+
+.LoginContainer > .LoginCard > .LoginCardActions {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.LoginContainer > .LoginCard > .LoginCardActions > .botao-login {
+    width: 100%;
+}
+
+.LoginContainer > .LoginCard > .LoginCardActions > .texto-cadastro {
+    margin-top: 18px;
+    font-size: 17px;
+}
+

@@ -1,0 +1,124 @@
+<div class="container">
+  <h1>Lista de Eventos:</h1>
+
+  <mat-tab-group>
+    <mat-tab label="Listar todos os eventos">
+      <div class="espaco"></div>
+      <table style="width:100%">
+        <tr>
+          <th>Id Evento</th>
+          <th>Id Evento Status</th>
+          <th>Id Categoria Evento</th>
+          <th>Nome</th>
+          <th>Data Hora Inicio</th>
+          <th>Data Hora Fim</th>
+          <th>Local</th>
+          <th>Descricao</th>
+          <th>Limite Vagas</th>
+        </tr>
+        <tbody>
+          <tr *ngFor="let item of listaDeEventos">
+            <td>{{item.idEvento}}</td>
+            <td>{{item.idEventoStatus}}</td>
+            <td>{{item.idCategoriaEvento}}</td>
+            <td>{{item.nome}}</td>
+            <td>{{item.dataHoraInicio}}</td>
+            <td>{{item.dataHoraFim}}</td>
+            <td>{{item.local}}</td>
+            <td>{{item.descricao}}</td>
+            <td>{{item.limiteVagas}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </mat-tab>
+
+
+
+    <mat-tab label="Listar eventos por Categoria">
+      <div class="espaco"></div>
+      <h2>Digite o Id da Categoria:</h2>
+      <mat-form-field appearance="fill">
+        <mat-label class="campo-usuario-digitar">Id da Categoria</mat-label>
+        <input matInput [(ngModel)]="idCategoriaEvento">
+      </mat-form-field>&nbsp;&nbsp;&nbsp;
+      <button (click)="clickMostrarListaCategoria()"  mat-raised-button color="primary">Listar eventos</button>
+
+      <div *ngIf="mostrarLista">
+        <table style="width:100%">
+          <tr>
+            <th>Id Evento</th>
+            <th>Id Evento Status</th>
+            <th>Id Categoria Evento</th>
+            <th>Nome</th>
+            <th>Data Hora Inicio</th>
+            <th>Data Hora Fim</th>
+            <th>Local</th>
+            <th>Descricao</th>
+            <th>Limite Vagas</th>
+          </tr>
+          <tbody>
+            <tr *ngFor="let item of listaDeEventosCategoria">
+              <td>{{item.idEvento}}</td>
+              <td>{{item.idEventoStatus}}</td>
+              <td>{{item.idCategoriaEvento}}</td>
+              <td>{{item.nome}}</td>
+              <td>{{item.dataHoraInicio}}</td>
+              <td>{{item.dataHoraFim}}</td>
+              <td>{{item.local}}</td>
+              <td>{{item.descricao}}</td>
+              <td>{{item.limiteVagas}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </mat-tab>
+
+
+
+    <mat-tab label="Listar eventos por data">
+      <div class="espaco"></div>
+      <h2>Selecione a data:</h2>
+      <mat-form-field appearance="fill">
+        <mat-label>Data do evento</mat-label>
+        <input [(ngModel)]="dataEvento"  matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>&nbsp;&nbsp;&nbsp;
+      <button (click)="clickMostrarListaData()"  mat-raised-button color="primary">Listar eventos</button>
+
+      <div *ngIf="mostrarLista">
+        <table style="width:100%">
+          <tr>
+            <th>Id Evento</th>
+            <th>Id Evento Status</th>
+            <th>Id Categoria Evento</th>
+            <th>Nome</th>
+            <th>Data Hora Inicio</th>
+            <th>Data Hora Fim</th>
+            <th>Local</th>
+            <th>Descricao</th>
+            <th>Limite Vagas</th>
+          </tr>
+          <tbody>
+            <tr *ngFor="let item of listaDeEventosData">
+              <td>{{item.idEvento}}</td>
+              <td>{{item.idEventoStatus}}</td>
+              <td>{{item.idCategoriaEvento}}</td>
+              <td>{{item.nome}}</td>
+              <td>{{item.dataHoraInicio}}</td>
+              <td>{{item.dataHoraFim}}</td>
+              <td>{{item.local}}</td>
+              <td>{{item.descricao}}</td>
+              <td>{{item.limiteVagas}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    </mat-tab>
+  </mat-tab-group>
+
+
+
+</div>

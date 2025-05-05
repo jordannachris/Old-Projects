@@ -1,0 +1,54 @@
+.UserRegisterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    color: #1776e4;
+}
+
+.UserRegisterContainer > .RegisterCard {
+    margin-top: 60px;
+    width: 30vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.UserRegisterContainer > .RegisterCard > h1 {
+    color: #3f51b5;
+    line-height: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.UserRegisterContainer > .RegisterCard > .RegisterCardContent {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0;
+    align-content: space-between;
+}
+
+.UserRegisterContainer > .RegisterCard > .RegisterCardContent > .espaco {
+    margin: 10px;
+}
+
+.UserRegisterContainer > .RegisterCard > .RegisterCardContent > .check-box {
+    align-self: center;
+}
+
+.UserRegisterContainer > .RegisterCard > .RegisterCardActions {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+
+.UserRegisterContainer > .RegisterCard > .RegisterCardActions > .botao-cadastro {
+    margin-top: 18px;
+    width: 100%;
+}
+

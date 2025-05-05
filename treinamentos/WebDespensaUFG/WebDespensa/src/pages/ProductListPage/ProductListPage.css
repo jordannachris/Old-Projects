@@ -1,0 +1,17 @@
+.ProductListContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    color: #1776e4;   
+}
+
+.Paper {
+    width: 90%;
+}
+
+.espaco {
+    margin: 500px;
+}

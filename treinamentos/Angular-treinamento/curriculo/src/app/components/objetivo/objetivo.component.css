@@ -1,0 +1,14 @@
+.objetivo {
+  border-bottom: dotted;
+  border-color: rgb(6, 6, 93);
+  min-height: 140px;
+  max-height: 160px;
+}
+
+.objetivo h3 {
+  text-transform: uppercase;
+}
+
+.objetivo p{
+  color: rgb(73, 71, 71);
+}

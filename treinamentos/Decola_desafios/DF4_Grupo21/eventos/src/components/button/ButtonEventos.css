@@ -1,0 +1,19 @@
+.button {
+  height: 60px;
+  min-width: 100px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;
+  background: #051c6b;
+  color: #fff;
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 0;
+  transition: filter 0.2s;
+}
+
+.button:disabled {
+  background: #d2d2d2;
+}

@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Jogo da Velha</h1>
+  <div class="container-jogo">
+    <h2 class="vez-jogador" *ngIf="conta_click !== 9 && !vencedor">Agora é a vez do jogador: {{ jogador }}</h2>
+    <h2 class="resultado-vencedor" *ngIf="vencedor">O jogador {{ vencedor }} venceu!</h2>
+    <h2 class="resultado-velha" *ngIf="conta_click === 9 && !vencedor">Deu velha!</h2>
+
+    <div class="container-jogo-tabuleiro">
+      <app-quadrado *ngFor="let item of quadrados;
+      let i = index" [valorQuadrado]="item" (click)="fazerJogada(i)">
+      </app-quadrado>
+    </div>
+    <div class="container-jogo-botoes">
+      <button class="btn-iniciar-jogo"mat-raised-button color="accent" (click)="novoJogo()">Iniciar jogo</button>
+      <button class="btn-reiniciar-jogo" mat-raised-button color="accent" (click)="novoJogo()">Reiniciar jogo</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<h1>{{ titulo }}</h1>
+
+<ul>
+  <p *ngIf="listaTarefas.length == 0"><small>Não tem nenhuma tarefa hoje!</small></p>
+  <li *ngFor="let item of listaTarefas">
+    {{ item.id }} - {{ item.descricao }} |
+    <button *ngIf="!item.concluida" (click)="marcarComoConcluida(item)">Concluir</button>
+    <button *ngIf="item.concluida" (click)="marcarComoPendente(item)">Refazer</button> |
+    <button (click)="removerTarefa(item)">Remover</button>
+  </li>
+</ul>
+
+<form [formGroup]="form">
+  <fieldset>
+    <label>Tarefa: </label>
+    <input
+      type="text"
+      placeholder="Descrição da tarefa"
+      maxlength="60"
+      formControlName="descricao"
+    >
+    &nbsp;
+    <small *ngIf="form.controls.descricao.invalid && !form.controls.descricao.pristine">Este campo deve conter entre 3 e 60 caracteres</small>
+    <button [disabled]="form.invalid" (click)="adicionarTarefa()">Salvar</button>
+  </fieldset>
+</form>

@@ -1,0 +1,43 @@
+.eventoDisponivelCard {
+    /* border: 5px solid orange;  */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.eventoDisponivelCard-content {
+    /* border: 5px solid blueviolet;  */
+    display: flex;
+    flex-direction: column;
+}
+
+.eventoDisponivelCard-informacoes {
+    /* border: 5px solid blue;  */
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.eventoDisponivelCard-informacoes-linhas {
+    /* border: 5px solid orange; */
+    display: flex;
+    align-items: flex-start;
+}
+
+.eventoDisponivelCard-informacoes-linhas-dado {
+    font-weight: bold;
+}
+
+.field-nome {
+
+    width: 400px;
+}
+
+.caralho {
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.formzin {
+    display: flex;
+    justify-content: flex-end;
+} 

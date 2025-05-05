@@ -1,0 +1,22 @@
+div.referencias h3 {
+    text-transform: uppercase;
+  }
+  
+div.referencias ul {
+    list-style-type: none;
+  }
+  
+div.referencias li {
+    padding-bottom: 5px;
+  }
+  
+div.referencias li h4{
+    font-size: large;
+    font-style: italic;
+    color: rgb(6, 6, 93);
+  }
+  
+div.referencias li p {
+    color: rgb(73, 71, 71);
+  }
+  

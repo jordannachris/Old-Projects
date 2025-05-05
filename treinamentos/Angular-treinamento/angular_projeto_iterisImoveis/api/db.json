@@ -1,0 +1,52 @@
+{
+  "imoveis": [
+    {
+      "id": 1,
+      "address": "Cabo Frio, RJ",
+      "image": "https://cf.bstatic.com/images/hotel/max1024x768/243/243585495.jpg",
+      "owner": "João Garcia",
+      "price": "500000",
+      "type": "Venda"
+    },
+    {
+      "id": 2,
+      "address": "Fernando de Noronha, PE",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_788089-MLB32510294342_102019-W.jpg",
+      "owner": "Aline Barba",
+      "price": "2000000",
+      "type": "Venda"
+    },
+    {
+      "id": 3,
+      "address": "Gramado, RS",
+      "image": "https://i.pinimg.com/originals/78/90/59/7890597ffda72c3bd012499fdb046aa2.jpg",
+      "owner": "Laiana Rando",
+      "price": "2500000",
+      "type": "Venda"
+    },
+    {
+      "id": 4,
+      "address": "Caraiva, BA",
+      "image": "https://imganuncios.mitula.net/caraiva_casas_8540125556285599220.jpg",
+      "owner": "Douglas",
+      "price": "125000",
+      "type": "Venda"
+    },
+    {
+      "address": "Rua Fulana de Tal",
+      "image": "https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.comprarcasaemorlando.com.br%2Fflorida-2%2Fcomprar-imoveis-em-orlando-possibilita-renda-extra-com-aluguel%2F&psig=AOvVaw3LI4HKl0vuw06uxKkCroQo&ust=1624730836932000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCMDg54ews_ECFQAAAAAdAAAAABAD",
+      "owner": "Jordanna",
+      "price": 1500000,
+      "type": "Venda",
+      "id": 5
+    },
+    {
+      "address": "",
+      "image": "https://i.ytimg.com/vi/sYjM1JBQ7dQ/maxresdefault.jpg",
+      "owner": "",
+      "price": 0,
+      "type": "Venda",
+      "id": 6
+    }
+  ]
+}

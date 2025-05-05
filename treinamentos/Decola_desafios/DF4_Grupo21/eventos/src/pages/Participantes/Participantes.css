@@ -1,0 +1,35 @@
+.participantes-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.filtro-card {
+    width: 40%;
+    margin: 20px auto 30px auto;
+}
+
+.participantes-container h2 {
+    color: var(--azul);
+}
+
+.participantes-form {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: space-around;
+}
+
+.cadastrar-card {
+    margin: 0 auto;
+}
+
+.filtro-cards {
+    margin: 0 auto;
+}
+
+.botoes-participacao {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+

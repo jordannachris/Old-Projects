@@ -1,0 +1,71 @@
+.home-container {
+  display: flex;
+  align-items: stretch;
+  height: calc(100vh - 64px);
+  text-align: center;
+  margin: 0;
+}
+
+#photo1 {
+  max-width: 100%;
+  height: calc(100vh - 64px);
+}
+#conteudo-home {
+  display: flex;
+  flex-direction: column;
+  margin-left: -160px;
+}
+
+#titulo-home {
+  color: var(--azul);
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 80px;
+}
+
+#main-home {
+  text-align:left;
+  display: flex;
+}
+
+#texto-direito {
+font-family: 'Poppins', sans-serif;
+}
+
+#botao-home {
+  align-self: center;
+  margin-top: 30px;
+}
+
+#vertical1 {
+    width: 100%;
+    height: 90px;
+    background: #ff9100;
+    -webkit-clip-path: polygon(25% 0%, 31% 0, 5% 100%, 0 100%);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    z-index:200;
+}
+
+#vertical2 {
+  width: 15px;
+  height: 100%;
+  background: var(--azul);
+  -webkit-transform: skew(150deg);
+  position: absolute;
+  left: -20px; 
+}
+
+#vertical3 {
+  height: 100%;
+  width: 20px;
+  background-color: var(--azul);
+  margin-left: 95px;
+  margin-right: 15px;
+}
+
+#vertical4 {
+  height: 100%;
+  width: 10px;
+  background-color: #ff9100;
+  margin-right: 50px;
+}
