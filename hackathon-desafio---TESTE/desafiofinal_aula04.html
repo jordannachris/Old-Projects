@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Final - Aula 04</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #div1 {
+        height: 50px;
+        background-color: #3f51b6;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      #botao {
+        margin-left: 15px;
+      }
+
+      h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin-left: 5px;
+      }
+
+      #div2 {
+        height: 30vh;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 5px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      #div3,
+      #div4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #646466;
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+
+      .menu {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        padding: 0;
+      }
+      .line {
+        fill: none;
+        stroke: white;
+        stroke-width: 6;
+      }
+      .line1 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+      }
+      .line2 {
+        stroke-dasharray: 60 60;
+        stroke-width: 6;
+      }
+      .line3 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="div1">
+      <div id="botao">
+       
+          <svg width="30" height="30" viewBox="0 0 100 95">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <h3>projeto</h3>
+    </div>
+
+    <div id="div2">
+      <img src="img2.png" />
+    </div>
+
+    <div id="div3">
+      <div id="local">Cabo Frio - RJ</div>
+      <div id="preco">R$5,000,000</div>
+    </div>
+
+    <div id="div4">
+      <div id="dono">João Garcia</div>
+      <div id="tipo-anuncio">Venda</div>
+    </div>
+  </body>
+</html>
